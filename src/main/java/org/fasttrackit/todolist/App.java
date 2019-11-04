@@ -22,7 +22,7 @@ public class App
         request.setDeadline(LocalDate.now().plusWeeks(1));
         ToDoItemRepository toDoItemRepository = new ToDoItemRepository();
 //        toDoItemRepository.createToDoItem(request);
-//        toDoItemRepository.updateToDoItem(2, false);
+          toDoItemRepository.updateToDoItem(2, false);
 //        toDoItemRepository.deleteToDoItem(9);
         List<TodoItem> toDoItems = toDoItemRepository.getToDoItems();
         System.out.println(toDoItems);
